@@ -8884,6 +8884,18 @@ dependencies = [
 ]
 
 [[package]]
+name = "starkbot-daemon"
+version = "0.1.11"
+dependencies = [
+ "anyhow",
+ "dotenvy",
+ "env_logger",
+ "log",
+ "starkbot-api",
+ "tokio",
+]
+
+[[package]]
 name = "starkbot-db"
 version = "0.1.11"
 dependencies = [

@@ -12,6 +12,7 @@ members = [
     "crates/starkbot-api",
     "crates/starkbot-gateway",
     "crates/starkbot-tauri",
+    "crates/starkbot-daemon",
 ]
 resolver = "2"
 default-members = ["crates/starkbot-tauri"]
