@@ -428,7 +428,7 @@ impl crate::backend::Backend for StarkbotEngine {
                                     continue;
                                 }
                                 let Some(flow) = schedules::load_flow(&sched_app_config.flows_dir(), &summary.id) else { continue };
-                                let entry_node = flow.flow.nodes.iter().find(|n| matches!(n.node_type, schedules::FlowNodeType::Entry));
+                                let entry_node = flow.flow.nodes.iter().find(|n| matches!(n.node_type, schedules::FlowNodeType::Core(schedules::CoreNodeType::Entry)));
                                 let Some(entry) = entry_node else { continue };
 
                                 let schedule_type = entry.data.get("schedule_type")

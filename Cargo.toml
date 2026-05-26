@@ -24,6 +24,7 @@ futures = "0.3"
 
 # Agentic engine
 metalcraft = { version = "0.3.1", features = ["rig"] }
+metalcraft-flows = { git = "https://github.com/rust4ai/metalcraft-flows", rev = "a6e8e2e55853d8138fe0fbf89b6a0fd37877cf1d", features = ["log"] }
 rig = "0.36"
 
 # TUI

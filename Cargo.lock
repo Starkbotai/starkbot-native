@@ -5940,6 +5940,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "metalcraft-flows"
+version = "0.1.0"
+source = "git+https://github.com/rust4ai/metalcraft-flows?rev=a6e8e2e55853d8138fe0fbf89b6a0fd37877cf1d#a6e8e2e55853d8138fe0fbf89b6a0fd37877cf1d"
+dependencies = [
+ "serde",
+ "serde_json",
+]
+
+[[package]]
 name = "mime"
 version = "0.3.17"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -8792,7 +8801,7 @@ dependencies = [
 
 [[package]]
 name = "starkbot-api"
-version = "0.1.10"
+version = "0.1.11"
 dependencies = [
  "anyhow",
  "async-trait",
@@ -8819,7 +8828,7 @@ dependencies = [
 
 [[package]]
 name = "starkbot-app"
-version = "0.1.10"
+version = "0.1.11"
 dependencies = [
  "async-trait",
  "crossterm",
@@ -8842,11 +8851,12 @@ dependencies = [
 
 [[package]]
 name = "starkbot-config"
-version = "0.1.10"
+version = "0.1.11"
 dependencies = [
  "chrono",
  "dirs",
  "log",
+ "metalcraft-flows",
  "mockito",
  "reqwest 0.12.28",
  "serde",
@@ -8858,7 +8868,7 @@ dependencies = [
 
 [[package]]
 name = "starkbot-core"
-version = "0.1.10"
+version = "0.1.11"
 dependencies = [
  "async-trait",
  "log",
@@ -8875,7 +8885,7 @@ dependencies = [
 
 [[package]]
 name = "starkbot-db"
-version = "0.1.10"
+version = "0.1.11"
 dependencies = [
  "chrono",
  "log",
@@ -8888,7 +8898,7 @@ dependencies = [
 
 [[package]]
 name = "starkbot-gateway"
-version = "0.1.10"
+version = "0.1.11"
 dependencies = [
  "anyhow",
  "async-trait",
@@ -8904,14 +8914,14 @@ dependencies = [
 
 [[package]]
 name = "starkbot-graph"
-version = "0.1.10"
+version = "0.1.11"
 dependencies = [
  "ratatui",
 ]
 
 [[package]]
 name = "starkbot-memory"
-version = "0.1.10"
+version = "0.1.11"
 dependencies = [
  "chrono",
  "log",
@@ -8924,7 +8934,7 @@ dependencies = [
 
 [[package]]
 name = "starkbot-skills"
-version = "0.1.10"
+version = "0.1.11"
 dependencies = [
  "log",
  "serde",
@@ -8934,7 +8944,7 @@ dependencies = [
 
 [[package]]
 name = "starkbot-tauri"
-version = "0.1.10"
+version = "0.1.11"
 dependencies = [
  "chrono",
  "dirs",
@@ -8953,7 +8963,7 @@ dependencies = [
 
 [[package]]
 name = "starkbot-tools"
-version = "0.1.10"
+version = "0.1.11"
 dependencies = [
  "async-trait",
  "chrono",
@@ -8974,7 +8984,7 @@ dependencies = [
 
 [[package]]
 name = "starkbot-tui"
-version = "0.1.10"
+version = "0.1.11"
 dependencies = [
  "crossterm",
  "log",
